@@ -1,6 +1,6 @@
 {
   "name": "aframe-livereload-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "live reloads an image set as src on a-sky",
   "main": "index.js",
   "unpkg": "dist/aframe-livereload-image.min.js",
