@@ -38,8 +38,8 @@ if (typeof AFRAME === 'undefined') {
       this.el.setAttribute('src', filename);
       var previousBuffer = {};
       var replace = debounce(function () {
+        delete THREE.Cache.files[filename];
         filename = this.data.src + '?a=' + Math.random().toFixed(8);
-        THREE.Cache.files = {};
         this.el.setAttribute('src', filename);
       }.bind(this), 1000);
       this.data.intervalHandle = setInterval(function () {
